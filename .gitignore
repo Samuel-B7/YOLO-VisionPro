@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Ajoutez ces lignes à la fin du .gitignore généré par le modèle Python:
+
+# Fichiers de poids de modèles entraînés (TRÈS LOURDS)
+*.pt
+*.pth
+*.h5
+
+# Dossiers de sortie d'entraînement d'Ultralytics (YOLOv8)
+# Ces dossiers doivent rester sur Google Drive.
+runs/
+train/
+detect/
+segment/
+
+# Dossiers spécifiques de PyTorch/TensorFlow (checkpoints)
+lightning_logs/
+checkpoints/
